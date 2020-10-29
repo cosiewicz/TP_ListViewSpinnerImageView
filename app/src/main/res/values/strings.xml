@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TP_ListViewSpinnerImageView</string>
+    <string name="albania">Albanie</string>
+    <string name="andorra">Andorre</string>
+    <string name="armenia">Arménie</string>
+    <string name="france">France</string>
+    <string name="germany">Allemagne</string>
+
+    <string name="c_albania">Tirana</string>
+    <string name="c_andorra">Andorra la Vella</string>
+    <string name="c_armenia">Erevan</string>
+    <string name="c_france">Paris</string>
+    <string name="c_germany">Berlin</string>
+
+
+    <string name="europe">Europe</string>
+    <string name="america">Amérique</string>
+
+</resources>
