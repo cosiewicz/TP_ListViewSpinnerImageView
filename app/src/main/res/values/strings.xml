@@ -5,12 +5,24 @@
     <string name="armenia">Arménie</string>
     <string name="france">France</string>
     <string name="germany">Allemagne</string>
+    <string name="spain">Espagne</string>
+    <string name="croatie">Croatie</string>
+    <string name="belarus">Biélorussie</string>
+    <string name="belgium">Belgique</string>
+    <string name="ceru">Peru</string>
+    <string name="colombia">Colombie</string>
+    <string name="united_states">États-Unis</string>
+
 
     <string name="c_albania">Tirana</string>
     <string name="c_andorra">Andorra la Vella</string>
     <string name="c_armenia">Erevan</string>
     <string name="c_france">Paris</string>
     <string name="c_germany">Berlin</string>
+    <string name="c_croatie">Zagreb</string>
+    <string name="c_belarus">Minsk</string>
+    <string name="c_belgium">Bruxelles</string>
+    <string name="c_spain">Madrid</string>
 
 
     <string name="europe">Europe</string>

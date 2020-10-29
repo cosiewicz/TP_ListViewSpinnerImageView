@@ -13,7 +13,6 @@ public class Continent {
         this.name=name;
     }
 
-
     public int getId() {
         return id;
     }
@@ -30,19 +29,15 @@ public class Continent {
         this.name = name;
     }
 
-
     public String toString(){
         return this.name;
     }
 
     @Override
     public boolean equals(Object o) {
-        if(o.getClass().getClass().equals(this)){
-            Log.i("debug","true");
-        }else{
-            Log.i("debug","false");
-        }
-        return true;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Continent continent = (Continent) o;
+        return id == continent.id;
     }
-
 }

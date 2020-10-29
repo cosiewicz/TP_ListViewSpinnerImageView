@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class Country {
 
-
-
     private int flagId;
     private String countryName;
     private String capital;
@@ -51,8 +49,6 @@ public class Country {
     public void setContinent(Continent continent) {
         this.continent = continent;
     }
-
-
 
 
     public static ArrayList<Country> getCountryWithContinent(ArrayList<Country> countries,Continent continent){

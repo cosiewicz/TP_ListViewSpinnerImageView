@@ -13,7 +13,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import java.util.ArrayList;
 
 public class MonAdapter extends BaseAdapter {
-
     private Context context;
     private ArrayList<Country> countries;
     private LayoutInflater layoutInflater;
@@ -23,9 +22,6 @@ public class MonAdapter extends BaseAdapter {
         this.countries=countries;
         layoutInflater=LayoutInflater.from(context);
     }
-
-
-
     @Override
     public int getCount() {
         return countries.size();
@@ -46,7 +42,7 @@ public class MonAdapter extends BaseAdapter {
         ConstraintLayout itemView;
 
         if(convertView==null){
-            itemView=(ConstraintLayout)layoutInflater.inflate(R.layout.listview,parent);
+            itemView=(ConstraintLayout)layoutInflater.inflate(R.layout.listview,parent,false);
         }
         else{
             itemView = (ConstraintLayout)convertView;
@@ -59,7 +55,14 @@ public class MonAdapter extends BaseAdapter {
         img.setImageResource(countries.get(position).getFlagId());
         tv_capital.setText(countries.get(position).getCapital());
         tv_countryName.setText(countries.get(position).getCountryName());
-
         return itemView;
+    }
+
+    public ArrayList<Country> getCountries() {
+        return countries;
+    }
+
+    public void setCountries(ArrayList<Country> countries) {
+        this.countries = countries;
     }
 }
