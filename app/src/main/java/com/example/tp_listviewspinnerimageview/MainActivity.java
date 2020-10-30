@@ -2,9 +2,11 @@ package com.example.tp_listviewspinnerimageview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.service.controls.Control;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView listView;
     private ArrayAdapter<Continent> spinnerAdapter;
     private MonAdapter adapter;
+    private static final int APPEL_SHOW_MOREACTIVIRY=1;
 
    AdapterView.OnItemSelectedListener spinnerListener = new AdapterView.OnItemSelectedListener() {
        @Override
@@ -33,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
        public void onNothingSelected(AdapterView<?> parent) {
        }
    };
+
+    AdapterView.OnItemClickListener listViewListener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Country c =(Country) parent.getAdapter().getItem(position);
+
+            Intent intent = new Intent (getBaseContext(), ShowMoreActivity.class);
+            //intent.putExtra("country",(Object)c);
+            startActivity(intent);
+        }
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(spinnerListener);
         adapter = new MonAdapter(this,new ArrayList<Country>());
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(listViewListener);
     }
 
     private void insertData(){
@@ -69,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         countries.add(new Country(R.drawable.belgium,getString(R.string.belgium),getString(R.string.c_belgium),continents.get(0)));
 
 
+        countries.add(new Country(R.drawable.united_states,getString(R.string.united_states),getString(R.string.c_united_states),continents.get(1)));
+        countries.add(new Country(R.drawable.argentina,getString(R.string.argentina),getString(R.string.c_argentina),continents.get(1)));
+        countries.add(new Country(R.drawable.peru,getString(R.string.peru),getString(R.string.c_peru),continents.get(1)));
+        countries.add(new Country(R.drawable.colombia,getString(R.string.colombia),getString(R.string.c_colombia),continents.get(1)));
+        countries.add(new Country(R.drawable.belize,getString(R.string.belize),getString(R.string.c_belize),continents.get(1)));
 
     }
 

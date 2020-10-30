@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,12 +18,15 @@ public class MonAdapter extends BaseAdapter {
     private ArrayList<Country> countries;
     private LayoutInflater layoutInflater;
 
+
+
     public MonAdapter(Context context,ArrayList<Country>countries){
         this.context=context;
         this.countries=countries;
         layoutInflater=LayoutInflater.from(context);
     }
     @Override
+
     public int getCount() {
         return countries.size();
     }

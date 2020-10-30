@@ -1,8 +1,9 @@
 package com.example.tp_listviewspinnerimageview;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Country {
+public class Country implements Serializable {
 
     private int flagId;
     private String countryName;

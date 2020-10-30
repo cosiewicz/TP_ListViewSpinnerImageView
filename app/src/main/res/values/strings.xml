@@ -9,9 +9,13 @@
     <string name="croatie">Croatie</string>
     <string name="belarus">Biélorussie</string>
     <string name="belgium">Belgique</string>
-    <string name="ceru">Peru</string>
+
+    <string name="peru">Perou</string>
     <string name="colombia">Colombie</string>
     <string name="united_states">États-Unis</string>
+    <string name="argentina">Argentine</string>
+    <string name="belize">Belize</string>
+
 
 
     <string name="c_albania">Tirana</string>
@@ -23,6 +27,13 @@
     <string name="c_belarus">Minsk</string>
     <string name="c_belgium">Bruxelles</string>
     <string name="c_spain">Madrid</string>
+
+
+    <string name="c_peru">Lima</string>
+    <string name="c_colombia">Bogota</string>
+    <string name="c_united_states">Washington</string>
+    <string name="c_argentina">Buenos Aires</string>
+    <string name="c_belize">Belmopan</string>
 
 
     <string name="europe">Europe</string>
