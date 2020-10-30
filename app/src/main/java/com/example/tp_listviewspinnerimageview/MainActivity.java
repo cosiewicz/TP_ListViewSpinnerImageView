@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             Country c =(Country) parent.getAdapter().getItem(position);
 
             Intent intent = new Intent (getBaseContext(), ShowMoreActivity.class);
-            //intent.putExtra("country",(Object)c);
+            intent.putExtra("country",c);
             startActivity(intent);
         }
     };

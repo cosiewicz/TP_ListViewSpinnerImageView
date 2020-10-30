@@ -1,8 +1,8 @@
 package com.example.tp_listviewspinnerimageview;
 
-import android.util.Log;
+import java.io.Serializable;
 
-public class Continent {
+public class Continent implements Serializable {
 
     private int id;
     private String name;
